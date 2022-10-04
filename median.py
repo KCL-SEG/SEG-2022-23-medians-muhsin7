@@ -2,9 +2,10 @@
 """ENTER YOUR SOLUTION HERE!"""
 def median(sorted):
     sorted.sort()
+    print(sorted)
     length = len(sorted)
     if (length % 2 == 0):
-        return (sorted[length//2]+sorted[(length//2)+1])/2
+        return (sorted[length//2]+sorted[(length//2)-1])/2
     else:
         return sorted[length//2]
 
